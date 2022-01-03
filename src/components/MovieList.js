@@ -1,11 +1,11 @@
 import React from 'react'
 import MovieCard from './MovieCard'
 
-function MovieList({Film}) {
+function MovieList({Film, search}) {
     return (
         <div className="movie-list">
             
-            {Film.map ((el , key) => 
+            {Film.filter (el => el.name.toUpperCase().includes(search.toUpperCase().trim())).map ((el , key) => 
             <MovieCard key = {el.id } Aflem = {el} />  
             
             

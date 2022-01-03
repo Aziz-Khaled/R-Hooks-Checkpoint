@@ -5,7 +5,7 @@ import NetflixLogo from '../NetflixLogo.png'
 function NavBar() {
     return (
         <div>
-             <Navbar bg="dark" variant="dark">
+              <Navbar bg="dark" variant="dark">
     <Container>
     <Navbar.Brand  href="#home"> <img className =' NetflixLogo' src ={NetflixLogo} alt ='Logo' /></Navbar.Brand>
     <Nav className="me-auto">

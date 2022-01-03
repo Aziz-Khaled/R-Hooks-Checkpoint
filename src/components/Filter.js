@@ -1,6 +1,10 @@
 import React from 'react'
 import {InputGroup,FormControl} from 'react-bootstrap'
-function Filter() {
+import Rating from './Rating';
+
+function Filter({setSearch,setRating,rating}) {
+
+
     return (
         <div className="SearchBar">
             <InputGroup className="mb-3">
@@ -9,10 +13,14 @@ function Filter() {
       placeholder="Username"
       aria-label="Username"
       aria-describedby="basic-addon1"
+      onChange={ (e)=> setSearch ((e.target.value))}
     />
   </InputGroup>
+
+<Rating rating={rating} setRating={setRating}/>
+
         </div>
     )
 }
 
-export default Filter
+export default Filter ;
